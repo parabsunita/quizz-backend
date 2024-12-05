@@ -6,11 +6,13 @@ const userRoutes = require("./routes/userRoutes");
 const topicRoutes = require("./routes/topicRoutes");
 const questionRoutes = require("./routes/questionRoutes");
 const quizRoutes = require("./routes/quizRoutes");
-
+const router = express.Router();
 dotenv.config();
 
 const app = express();
-
+router.get("/", (req, res) => {
+  res.send("Hello World!");
+});
 // Middleware
 app.use(cors());
 app.use(express.json());
