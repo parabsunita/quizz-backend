@@ -10,3 +10,4 @@ node_modules/
 # Ignore compiled Python files
 __pycache__/
 *.pyc
+.vercel
